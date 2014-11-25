@@ -40,8 +40,7 @@ namespace ChunkAnalyser
             else
             {
                 Console.Write("Chunk Analyser - ");
-                Console.Write("Erik Høyrup Jørgensen - ");
-                Console.WriteLine("Stejska.com - 2014");
+                Console.Write("Stejska.com - Erik Høyrup Jørgensen - 2014");
                 Console.WriteLine();
                 Console.WriteLine("Format: [FILE] [TARGET] [OPTIONAL OPTIONS]");
                 Console.WriteLine();

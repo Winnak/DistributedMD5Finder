@@ -25,8 +25,7 @@ namespace ChunkCreator
             if (args.Length == 0)
             {
                 Console.Write("Chunk Creator - ");
-                Console.Write("Erik Høyrup Jørgensen - ");
-                Console.WriteLine("Stejska.com - 2014");
+                Console.Write("Stejska.com - Erik Høyrup Jørgensen - 2014");
                 Console.WriteLine();
                 Console.WriteLine("Format: [OPTIONAL OPTIONS]");
                 Console.WriteLine();
@@ -42,8 +41,7 @@ namespace ChunkCreator
             else
             {
                 Console.Write("Chunk Creator - ");
-                Console.Write("Erik Høyrup Jørgensen - ");
-                Console.WriteLine("Stejska.com - 2014");
+                Console.WriteLine("Stejska.com - Erik Høyrup Jørgensen - 2014");
 
                 for (int i = 0; i < args.Length; i++)
                 {
