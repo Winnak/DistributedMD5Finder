@@ -27,21 +27,29 @@ namespace ChunkCreator
                 Console.Write("Chunk Creator - ");
                 Console.Write("Stejska.com - Erik Høyrup Jørgensen - 2014");
                 Console.WriteLine();
-                Console.WriteLine("Format: [OPTIONAL OPTIONS]");
+                Console.WriteLine("Format: [PASSWORD LENGTH] [OPTIONAL OPTIONS]");
                 Console.WriteLine();
                 Console.WriteLine("Options:");
                 Console.WriteLine("-c\tChar set file path");
                 Console.WriteLine("-s\tChunk Amount");
-                Console.WriteLine("-l\tLength of password");
                 Console.WriteLine("-d\tDirectory");
                 Console.WriteLine("-pre\tPrefix");
                 Console.WriteLine();
                 Console.WriteLine();
+
+                return;
             }
             else
             {
                 Console.Write("Chunk Creator - ");
                 Console.WriteLine("Stejska.com - Erik Høyrup Jørgensen - 2014");
+
+                if (!int.TryParse(args[0], out length))
+                {
+                    Console.WriteLine("INVALID PASSWORD LENGTH");
+                    Console.ReadKey();
+                    return;
+                }
 
                 for (int i = 0; i < args.Length; i++)
                 {
@@ -63,15 +71,6 @@ namespace ChunkCreator
                         if (!int.TryParse(args[i + 1], out chunks))
                         {
                             Console.WriteLine("INVALID CHUNK AMOUNT");
-                            Console.ReadKey();
-                            return;
-                        }
-                    }
-                    else if (args[i] == "-l")
-                    {
-                        if (!int.TryParse(args[i + 1], out length))
-                        {
-                            Console.WriteLine("INVALID PASSWORD LENGTH");
                             Console.ReadKey();
                             return;
                         }
