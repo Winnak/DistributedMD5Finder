@@ -1,4 +1,4 @@
-DistributedMD5Finder
+Distributed MD5 Finder
 ====================
 Splits the task into chunks and solves them.
 
